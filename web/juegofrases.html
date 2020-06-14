@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quién dijo qué</title>
+
+        <base href="juegofrases.html">
+
+        <meta name="description" content="juego de arrastrar frases hacia el personaje que las dijo">
+        <meta name="keywords" content="juego,frases,personajes">
+        <meta name="author" content="Carmen Vigo Rodríguez (UO264045)">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />
+        <link rel="stylesheet" type="text/css" href="juegofrases.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="juegofrases.js"></script>
+
+    </head>
+    
+    <body>
+        <header>
+            <h1>¿Quién dijo qué?</h1>
+            <h2>¡pon a prueba tu memoria!</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a title="Inicio" accesskey="I" tabindex="1" href="inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                    <ul class="dropdown-content">
+                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="juegofrases.html">Quién dijo qué</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                    <ul class="dropdown-content">
+                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P" tabindex="8" href="rutaPrecio.html">Precio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <object type="text/html" data="aside.html" width="450" height="1000"></object>
+        </aside>
+        <main>
+            <section>
+                <h3>Arrastra las frases hacia el personaje que las dijo</h3>
+            </section>
+            <div class="grid-game-container">
+            <section class="grid-item">
+                <h4>Frases</h4>
+                <ul>
+                    <li id="Hagrid" class="draggable" draggable="true" ondragstart="juegoFrases.drag(event)">"Eres un mago, Harry"</li>
+                    <li id="Dumbledore" class="draggable" draggable="true" ondragstart="juegoFrases.drag(event)">"Las palabras son, en mi no tan humilde opinión, nuestra más inagotable fuente de magia, capaces de infringir daño y de remediarlo"</li>
+                    <li id="Hermione" class="draggable" draggable="true" ondragstart="juegoFrases.drag(event)">"Me voy a la cama antes de que a alguno de los dos se os ocurra otra genial idea y acabemos muertos. O peor: expulsados"</li>
+                    <li id="Luna" class="draggable" draggable="true" ondragstart="juegoFrases.drag(event)">"Lo que perdemos al final siempre vuelve a nosotros... aunque a veces no del modo que esperamos"</li>
+                    <li id="Dobby" class="draggable" draggable="true" ondragstart="juegoFrases.drag(event)">"Dobby no mata, sólo mutila o hiere de gravedad"</li>
+                </ul>
+            </section>
+            <section class="grid-item"> 
+                <h4>Personajes</h4>
+                <ul>
+                    <li class="personaje" draggable="false" ondrop="juegoFrases.drop(event, 'Luna')" ondragover="juegoFrases.allowDrop(event)">Luna</li>
+                    <li class="personaje" draggable="false" ondrop="juegoFrases.drop(event, 'Hermione')" ondragover="juegoFrases.allowDrop(event)">Hermione</li>
+                    <li class="personaje" draggable="false" ondrop="juegoFrases.drop(event, 'Dobby')" ondragover="juegoFrases.allowDrop(event)">Dobby</li>
+                    <li class="personaje" draggable="false" ondrop="juegoFrases.drop(event, 'Dumbledore')" ondragover="juegoFrases.allowDrop(event)">Dumbledore</li>
+                    <li class="personaje" draggable="false" ondrop="juegoFrases.drop(event, 'Hagrid')" ondragover="juegoFrases.allowDrop(event)">Hagrid</li>
+                </ul>
+            </section>
+            </div>
+        </main>
+        <footer>
+            <object type="text/html" data="footer.html" width="1500" height="200"></object>
+        </footer>
+    </body>
+</html>

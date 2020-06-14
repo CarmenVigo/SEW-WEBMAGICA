@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Titulo</title>
+
+        <base href="inicio.html">
+
+        <meta name="description" content="presentacion de la web">
+        <meta name="keywords" content="presentacion,info,about">
+        <meta name="author" content="Carmen Vigo Rodríguez (UO264045)">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="ProcesarXML.js"></script>
+
+
+    </head>
+
+    
+    <body>
+        <header>
+            <h1>Adéntrate</h1>
+            <h2>en Una Web Llena de Magia</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a title="Inicio" accesskey="I" tabindex="1" href="inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                    <ul class="dropdown-content">
+                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="juegofrases.html">Quién dijo qué</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                    <ul class="dropdown-content">
+                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P" tabindex="8" href="rutaPrecio.html">Precio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <object type="text/html" data="aside.html" width="450" height="1000"></object>
+        </aside>
+        <main>
+            <section>
+                <h3>¿Qué contenido encontraré?</h3>
+                <p>En "Una Web Llena de Magia" encontrarás información de interés acerca de las novelas y 
+                    películas del mágico universo de Harry Potter: tanto de la saga principal que le da nombre 
+                    al universo como de Animales Fantásticos. Además, podrás poner a prueba tus conocimientos
+                    de este fandom mediante dos juegos que un Muggle no podrá completar y consultar el
+                    viaje guiado que hemos organizado por los lugares más emblemáticos del Londres mágico.</p>
+                <button onclick = "saberMas.verXML()">Saber más...</button>
+            </section>
+        </main>
+        <footer>
+            <object type="text/html" data="footer.html" width="1500" height="200"></object>
+        </footer>
+    </body>
+</html>

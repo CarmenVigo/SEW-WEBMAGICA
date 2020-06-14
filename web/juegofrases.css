@@ -1,0 +1,25 @@
+ul{
+  list-style: none;
+  margin: 5%;
+}
+
+h3,h4{
+  text-align: center;
+}
+
+.draggable, .personaje{
+    border: black 1px solid;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pareja{
+    border: rgb(0, 39, 0) 1px solid;
+    color: rgb(0, 39, 0);
+    text-decoration: line-through;
+}
+
+.grid-game-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}

@@ -1,0 +1,29 @@
+{
+    "points":[
+        {
+            "name": "zoo-londres",
+            "lat": "51.535556",
+            "lng": "-0.155833"
+        },
+        {
+            "name": "leadenhall-market",
+            "lat": "51.5128111",
+            "lng": "-0.0835194"
+        },
+        {
+            "name": "king's-cross-station",
+            "lat": "51.5309",
+            "lng": "-0.1233"
+        },
+        {
+            "name": "embajada-australia",
+            "lat": "51.512889",
+            "lng": "-0.115722"
+        },
+        {
+            "name": "estacion-westminster",
+            "lat": "51.501",
+            "lng": "-0.125"
+        }
+    ]
+}

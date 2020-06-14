@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/saga" elementFormDefault="qualified" targetNamespace="http://tempuri.org/saga" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="novelas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="novela" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="novela">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="portada" />
+        <xs:element ref="titulo" />
+        <xs:element ref="posicion" />
+        <xs:element ref="autora" />
+        <xs:element ref="datosNovela" />
+        <xs:element ref="datosPelicula" />
+        <xs:element ref="sinopsis" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="portada" type="xs:string" />
+  <xs:element name="titulo" type="xs:string" />
+  <xs:element name="posicion" type="xs:string" />
+  <xs:element name="autora" type="xs:string" />
+  <xs:element name="datosNovela">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="paginas" />
+        <xs:element ref="publicacion" />
+        <xs:element ref="editorial" />
+        <xs:element ref="puntuacion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paginas" type="xs:string" />
+  <xs:element name="publicacion" type="xs:string" />
+  <xs:element name="editorial" type="xs:string" />
+  <xs:element name="puntuacion" type="xs:string" />
+  <xs:element name="datosPelicula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="duracion" />
+        <xs:element ref="estreno" />
+        <xs:element ref="estrellas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="duracion" type="xs:string" />
+  <xs:element name="estreno" type="xs:string" />
+  <xs:element name="estrellas" type="xs:string" />
+  <xs:element name="sinopsis" type="xs:string" />
+</xs:schema>

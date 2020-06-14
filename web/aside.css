@@ -1,0 +1,48 @@
+p, h1, h2, h3, h4 { /* A=0, B=0, C=1 -> Especifidad 1 */
+    font-family: Georgia, Cambria, 'Times New Roman', serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p,h2,h3,h4{
+    color: black;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+h1{
+    font-size: 1.5em;
+    color: rgb(0, 39, 0);
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+h4{
+    font-size: 1.2em;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-image: url('multimedia/img/papel.jpg');
+    background-attachment: fixed;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ruta por los escenarios</title>
+
+        <meta name="description" content="ruta por los escenarios de harry potter y precio del viaje">
+        <meta name="keywords" content="ruta,escenarios">
+        <meta name="author" content="Carmen Vigo Rodríguez (UO264045)">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />
+        <link rel="stylesheet" type="text/css" href="mapa.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Únete</h1>
+            <h2>a la Visita Guiada</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a title="Inicio" accesskey="I" tabindex="1" href="inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                    <ul class="dropdown-content">
+                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="juegofrases.html">Quién dijo qué</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                    <ul class="dropdown-content">
+                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P" tabindex="8" href="rutaPrecio.html">Precio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <object type="text/html" data="aside.html" width="450" height="1000"></object>
+        </aside>
+
+        <main>
+            <section>
+                <h3>¿En qué consiste la visita?</h3>
+
+                <div id="mapa"></div>
+
+                <script src="ruta.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&amp;callback=mapa.mostrarPunto"></script>
+               
+                <p>Todos los fans de la saga de Harry Potter hemos soñado con visitar algunos de nuestros lugares favoritos de la saga. Por eso,
+                    hemos organizado una visita guiada por el corazón de Londres que te permitirá sentirte como un auténtico mago.
+                </p>
+                <p>Presiona ctrl y muévete por el mapa sin miedo para descubrir la posición de los cinco puntos de interés.</p>
+            </section>
+            <section>
+                <h3>¿Qué lugares visitaremos?</h3>
+                <p>Como la visita se realizará a pie hemos seleccionado cinco de los escenarios más caracterísiticos de las películas.</p>
+                
+                <h4>King's Cross Station</h4>
+                <p>No hace falta mencionar que todo curso en Hogwarts comienza en el mágico andén 9 y 3/4. Por eso no podíamos excluirlo.
+                    Se visitará el interior de la estación y todos podremos tomarnos una fotografía entrando en el andén con
+                    la bufanda de nuestra casa.
+                </p>
+                <img src="multimedia/img/anden-934.jpg" alt="Imagen del andén 9 y 3/4" title="andén 9 3/4" />
+                <h4>Banco de Gringotts</h4>
+                <p>La sucursal bancaria no es otra que la Embajada de Australia, donde se rodaron también algunos interiores.
+                El edificio real no está custodiado por dragones ni administrado por duendes, pero esta parada merece muchísimo la pena.
+                </p>
+                <img src="multimedia/img/gringotts-bank.jpg" alt="Imagen del banco de Gringotts" title="Banco de Gringotts" />
+                <h4>Zoo de Londres</h4>
+                <p>Todo comenzó en el Reptiliario del Zoo de Londres, donde Harry hizo desaparecer el cristal que le separaba
+                    de una serpiente y habló con ella en el idioma de la serpiente o pársel.
+                    Nosotros no cruzaremos el cristal, pero sí tomaremos fotos de la placa que situaron
+                    al lado del terrario donde se rodó la película.
+                </p>
+                <img src="multimedia/img/zoo-londres.jpg" alt="Imagen del zoo de londres" title="zoo de londres" />
+                <h4>El Caldero Chorreante</h4>
+                <p>Leadenhall Market, el mercado techado del centro de Londres y uno de los más antiguos de la ciudad (s. XIV), sirve como puerta de entrada al 
+                    atestado Caldero Chorreante, que a su vez conduce al Callejón Diagon, un recinto masificado especializado en magia y brujería, pócimas, 
+                    atuendos y animales místicos, donde podremos adquirir nuestra varita mágica o una lechuza, entre otros utensilios.</p>
+                <img src="multimedia/img/caldero-chorreante.jpg" alt="Imagen del Caldero Chorreante" title="Caldero Chorreante" />
+                <h4>El Ministerio de Magia</h4>
+                <p>Todos tenemos grabada a fuego en nuestra mente la escena en la que un mago utiliza la Estación de Westminster, 
+                    junto al Big Ben y el Parlamento, para desplazarse al Ministerio de la Magia.
+                    Por eso, aunque no podamos acceder al ministerio, hemos decidido que una para imprescindible es sacarnos fotos
+                    en la cabina telefónica.</p>
+                <img src="multimedia/img/ministerio-magia.jpg" alt="Imagen del ministerio de la magia" title="Ministerio de la Magia" />
+            </section>
+        </main>
+        <footer>
+            <object type="text/html" data="footer.html" width="1500" height="200"></object>
+        </footer>
+    </body>
+</html>

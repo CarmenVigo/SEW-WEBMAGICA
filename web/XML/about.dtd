@@ -1,0 +1,10 @@
+<!ELEMENT informacion (interes+)>
+<!ELEMENT interes (web, autora)>
+<!ATTLIST interes id ID #REQUIRED>
+<!ELEMENT web (titulo, origen)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT autora (nombre, uo, email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT uo (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

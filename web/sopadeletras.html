@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sopa de Letras</title>
+
+        <!--base href=""-->
+        <meta name="description" content="Sopa de letras de los hechizos de harry potter">
+        <meta name="keywords" content="hechizos,sopa de letras">
+        <meta name="author" content="Carmen Vigo Rodríguez (UO264045)">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="sopadeletras.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />
+        <link rel="stylesheet" type="text/css" href="sopadeletras.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Resuelve</h1>
+            <h2>la Sopa de Hechizos</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a title="Inicio" accesskey="I" tabindex="1" href="inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                    <ul class="dropdown-content">
+                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="juegofrases.html">Quién dijo qué</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                    <ul class="dropdown-content">
+                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P" tabindex="8" href="rutaPrecio.html">Precio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <aside>
+            <object type="text/html" data="aside.html" width="450" height="1000"></object>
+        </aside>
+
+        <main>
+            <section class="words">
+                <h3>¡Encuentra los cuatro hechizos y demuestra que eres un mago de verdad!</h3>
+                <ul>
+                    <li class="waccio">Accio</li>
+                    <li class="wcrucio">Crucio</li>
+                    <li class="wimperio">Imperium</li>
+                    <li class="wpatronum">Patronum</li>
+                </ul>
+            </section>
+
+            <section class="sopa">
+                <h4>Resuelve el desafío haciendo click sobre las letras</h4>
+                <ul>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">p</li>
+                    <li class="random">a</li>
+                    <li class="crucio" onclick="sopaDeLetras.markCrucioAsFound()">c</li>
+                    <li class="crucio" onclick="sopaDeLetras.markCrucioAsFound()">r</li>
+                    <li class="crucio" onclick="sopaDeLetras.markCrucioAsFound()">u</li>
+                    <li class="crucio" onclick="sopaDeLetras.markCrucioAsFound()">c</li>
+                    <li class="imperio crucio" onclick="sopaDeLetras.markImperioCrucioAsFound()">i</li>
+                    <li class="crucio" onclick="sopaDeLetras.markCrucioAsFound()">o</li>
+                    
+                    <li class="random">r</li>
+                    <li class="accio patronum" onclick="sopaDeLetras.markAccioPatronumAsFound()">a</li>
+                    <li class="accio" onclick="sopaDeLetras.markAccioAsFound()">c</li>
+                    <li class="accio" onclick="sopaDeLetras.markAccioAsFound()">c</li>
+                    <li class="accio" onclick="sopaDeLetras.markAccioAsFound()">i</li>
+                    <li class="accio" onclick="sopaDeLetras.markAccioAsFound()">o</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">m</li>
+                    <li class="random">r</li>
+                    
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">t</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">p</li>
+                    <li class="random">r</li>
+
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">e</li>
+                    <li class="random">r</li>
+
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">o</li>
+                    <li class="random">r</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">r</li>
+                    <li class="random">r</li>
+                  
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">n</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">i</li>
+                    <li class="random">r</li>
+                    
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="imperio patronum" onclick="sopaDeLetras.markImperioPatronumAsFound()">u</li>
+                    <li class="random">r</li>
+
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="random">r</li>
+                    <li class="imperio" onclick="sopaDeLetras.markImperioAsFound()">s</li>
+                    <li class="patronum" onclick="sopaDeLetras.markPatronumAsFound()">m</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <object type="text/html" data="footer.html" width="1500" height="200"></object>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+th { 
+    background: rgb(0, 39, 0); 
+    color: white; 
+    font-weight: bold; 
+}
+
+th, td:first-child, td:last-child {
+    text-align: center;
+}
+
+td, th { 
+    padding: 0.5em; 
+    border: 1px solid #2C2C2C; 
+}
+
+#gastos a {
+    border: 1px solid rgb(0, 39, 0);
+    color: rgb(0, 39, 0);
+    background-color: #C8C8C8;
+}

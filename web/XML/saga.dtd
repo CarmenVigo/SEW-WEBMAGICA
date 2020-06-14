@@ -1,0 +1,17 @@
+<!ELEMENT novelas (novela+)>
+<!ELEMENT novela (portada, titulo, posicion, autora, datosNovela, datosPelicula, sinopsis)>
+<!ATTLIST novela id ID #REQUIRED>
+<!ELEMENT portada (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT autora (#PCDATA)>
+<!ELEMENT datosNovela (paginas, publicacion, editorial, puntuacion)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT publicacion (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT puntuacion (#PCDATA)>
+<!ELEMENT datosPelicula (duracion, estreno, estrellas)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT estreno (#PCDATA)>
+<!ELEMENT estrellas (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>

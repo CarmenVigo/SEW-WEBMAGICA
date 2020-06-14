@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Precio de la Ruta por los escenarios</title>
+
+        <meta name="description" content="precio de la ruta por los escenarios de harry potter y precio del viaje">
+        <meta name="keywords" content="ruta,precio,divisa">
+        <meta name="author" content="Carmen Vigo Rodríguez (UO264045)">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="gastos.js"></script>
+        <script src="Conversor.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />
+        <link rel="stylesheet" type="text/css" href="conversor.css" />
+        <link rel="stylesheet" type="text/css" href="gastos.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Calcula</h1>
+            <h2>tus gastos</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a title="Inicio" accesskey="I" tabindex="1" href="inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                    <ul class="dropdown-content">
+                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="juegofrases.html">Quién dijo qué</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                    <ul class="dropdown-content">
+                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P" tabindex="8" href="rutaPrecio.html">Precio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <object type="text/html" data="aside.html" width="450" height="1000"></object>
+        </aside>
+
+        <main>
+            <section id="gastos">
+                <h3>Gastos estimados</h3>
+                <table id="tabla">
+                    <tr>
+                        <th>Parada</th>
+                        <th>Guía</th>
+                        <th>Fotógrafo</th>
+                        <th>Snacks</th>
+                    </tr>
+                    <tr>
+                        <td>Zoo de Londres</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>King's Cross</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Banco de Gringotts</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Caldero Chorreante</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Ministerio de Magia</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+                <a href="#tabla" onclick="total.calcular()">Calcular gastos totales</a>
+            </section>
+
+            <section>
+                <h3>Conversor de divisa</h3>
+
+                <div class="conversor">
+                    <div>
+                        <label for="fromValue">Cantidad que converir</label>
+                        <input type="number" id="fromValue" name="fromValue" onchange="conversor.convertir()" />
+                        <label for="from">Moneda origen</label>
+                        <select id="from" name="from" onchange="conversor.convertir()">
+                            <option value="EUR">Euros</option>
+                            <option value="USD">Dólares estadounidenses</option>
+                            <option value="GBP">Libras esterlinas</option>
+                            <option value="JPY">Yenes</option>
+                            <option value="CHF">Francos suizos</option>
+                            <option value="SEK">Coronas suecas</option>
+                        </select>
+                    </div>
+                    <p>&#8651;</p>
+                    <div>
+                        <label for="toValue">Cantidad convetida</label>
+                        <input type="number" id="toValue" name="toValue" readonly />
+                        <label for="to">Moneda destino</label>
+                        <select id="to" name="to" onchange="conversor.convertir()">
+                            <option value="EUR">Euros</option>
+                            <option value="USD">Dólares estadounidenses</option>
+                            <option value="GBP">Libras esterlinas</option>
+                            <option value="JPY">Yenes</option>
+                            <option value="CHF">Francos suizos</option>
+                            <option value="SEK">Coronas suecas</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <object type="text/html" data="footer.html" width="1500" height="200"></object>
+        </footer>
+    </body>
+</html>

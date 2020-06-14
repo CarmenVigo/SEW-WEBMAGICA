@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/about" elementFormDefault="qualified" targetNamespace="http://tempuri.org/about" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="informacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="interes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="interes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="web" />
+        <xs:element ref="autora" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="web">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo" />
+        <xs:element ref="origen" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string" />
+  <xs:element name="origen" type="xs:string" />
+  <xs:element name="autora">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" />
+        <xs:element ref="uo" />
+        <xs:element ref="email" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string" />
+  <xs:element name="uo" type="xs:string" />
+  <xs:element name="email" type="xs:string" />
+</xs:schema>

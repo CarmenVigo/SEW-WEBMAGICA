@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informacion xmlns="http://tempuri.org/about" xmlns:xs="http://www.w3.org/2001/XMLSchema>">
+  <interes id="I0">
+    <web>
+      <titulo>Una web llena de Magia</titulo>
+      <origen>Una web llena de Magia nace de las ganas de viajar a Hogwarts, la escuela de Magia y Hechicería preferida por todo mago respetable, y el deseo de que la magia sea real.</origen>
+    </web>
+    <autora>
+      <nombre>Carmen Vigo Rodríguez</nombre>
+      <uo>UO264045</uo>
+      <email>uo264045@uniovi.es</email>
+    </autora>
+  </interes>
+</informacion>
