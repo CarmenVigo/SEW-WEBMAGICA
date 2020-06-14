@@ -8,7 +8,7 @@
 
 .sopa ul {
     display: grid;
-    grid-template-columns: repeat(8, 15%);
+    grid-template-columns: repeat(8, 12%);
     list-style: none;
     margin: 0;
     padding: 0;
