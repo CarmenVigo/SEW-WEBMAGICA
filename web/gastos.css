@@ -18,3 +18,8 @@ td, th {
     color: rgb(0, 39, 0);
     background-color: #C8C8C8;
 }
+
+.enlace_desactivado {
+pointer-events: none;
+cursor: default;
+}
