@@ -30,3 +30,11 @@ div {
 input, select {
 	margin: 0.5em;
 }
+
+a {	
+    font-size: 1.5em;
+}
+
+div{	
+    line-height: 50px;
+}
