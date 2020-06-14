@@ -21,18 +21,18 @@
             </header>
             <nav>
             <ul>
-                <li><a title="Inicio" accesskey="I" tabindex="1" href="../inicio.html">Inicio</a></li>
-                <li><a title="Novelas" accesskey="N" tabindex="2" href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
-                <li class="dropdown"><a title="Juegos" accesskey="J" tabindex="3" href="#">Juegos </a>
+                <li><a title="Inicio" accesskey="I"  href="../inicio.html">Inicio</a></li>
+                <li><a title="Novelas" accesskey="N"  href="XML/saga-harrypotter.html">Novelas y Películas</a></li>
+                <li class="dropdown"><a title="Juegos" accesskey="J"  href="#">Juegos </a>
                     <ul class="dropdown-content">
-                        <li><a title="SopaLetras" accesskey="S" tabindex="4" href="../sopadeletras.html">Sopa Hechizada</a></li>
-                        <li><a title="QuienDijoQue" accesskey="Q" tabindex="5" href="../juegofrases.html">Quién dijo qué</a></li>
+                        <li><a title="SopaLetras" accesskey="S"  href="../sopadeletras.html">Sopa Hechizada</a></li>
+                        <li><a title="QuienDijoQue" accesskey="Q"  href="../juegofrases.html">Quién dijo qué</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a title="Visita" accesskey="V" tabindex="6" href="#">Visita Guiada</a>
+                <li class="dropdown"><a title="Visita" accesskey="V"  href="#">Visita Guiada</a>
                     <ul class="dropdown-content">
-                        <li><a title="DatosVisita" accesskey="D" tabindex="7" href="../ruta.html">Información</a></li>
-                        <li><a title="Precio" accesskey="P" tabindex="8" href="../rutaPrecio.html">Precio</a></li>
+                        <li><a title="DatosVisita" accesskey="D" href="../ruta.html">Información</a></li>
+                        <li><a title="Precio" accesskey="P"  href="../rutaPrecio.html">Precio</a></li>
                     </ul>
                 </li>
             </ul>
