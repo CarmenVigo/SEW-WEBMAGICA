@@ -1,6 +1,6 @@
 class Conversor {
 	constructor() {
-        this.url = "http://www.apilayer.net/api/live?access_key=df7291f0e1f666df4d861605c4fb40c4&source=USD&currencies=EUR,GBP,JPY,CHF,SEK";
+        this.url = "https://www.apilayer.net/api/live?access_key=df7291f0e1f666df4d861605c4fb40c4&source=USD&currencies=EUR,GBP,JPY,CHF,SEK";
 		Conversor.conversiones = {
 			"USD": 1,
 			"EUR": 2,
