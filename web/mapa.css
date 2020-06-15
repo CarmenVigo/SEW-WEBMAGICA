@@ -1,10 +1,11 @@
+/* A=1, B=0, C=0 -> Especifidad 100 */
 #mapa {
     height: 50vh;
     width: 50%;    
     float: left;
 }
 
-
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h3{
     text-align: center;
 }

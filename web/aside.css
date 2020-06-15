@@ -1,33 +1,42 @@
-p, h1, h2, h3, h4 { /* A=0, B=0, C=1 -> Especifidad 1 */
+/* A=0, B=0, C=1 -> Especifidad 1 */
+p, h1, h2, h3, h4 {
     font-family: Georgia, Cambria, 'Times New Roman', serif;
     text-align: justify;
     text-justify: inter-word;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 p,h2,h3,h4{
     color: black;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 p{
     font-size: 1.1em;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h1{
     font-size: 1.5em;
     color: rgb(0, 39, 0);
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h2{
     font-size: 1.4em;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h3{
     font-size: 1.3em;
 }
+
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h4{
     font-size: 1.2em;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 img, video {
     max-width: 100%;
     height: auto;
@@ -36,11 +45,13 @@ img, video {
     margin-right: auto;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 body{
     background-image: url('multimedia/img/papel.jpg');
     background-attachment: fixed;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 footer {
     left: 0;
     bottom: 0;

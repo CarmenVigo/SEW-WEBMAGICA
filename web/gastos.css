@@ -1,24 +1,30 @@
+/* A=0, B=0, C=1 -> Especifidad 1 */
 th { 
     background: rgb(0, 39, 0); 
     color: white; 
     font-weight: bold; 
-}
-
-th, td:first-child, td:last-child {
     text-align: center;
 }
 
+/* A=0, B=1, C=1 -> Especifidad 11 */
+td:first-child, td:last-child {
+    text-align: center;
+}
+
+/* A=0, B=0, C=1 -> Especifidad 1 */
 td, th { 
     padding: 0.5em; 
     border: 1px solid #2C2C2C; 
 }
 
+/* A=1, B=0, C=1 -> Especifidad 101 */
 #gastos a {
     border: 1px solid rgb(0, 39, 0);
     color: rgb(0, 39, 0);
     background-color: #C8C8C8;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .enlace_desactivado {
 pointer-events: none;
 cursor: default;

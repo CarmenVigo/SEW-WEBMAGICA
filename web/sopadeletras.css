@@ -1,3 +1,4 @@
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .sopa {
     border-radius: 2em;
     font-size: 1.5em;
@@ -6,6 +7,7 @@
     width: 50vw;
 }
 
+/* A=0, B=1, C=1 -> Especifidad 11 */
 .sopa ul {
     display: grid;
     grid-template-columns: repeat(8, 10%);
@@ -14,6 +16,7 @@
     padding: 0;
 }
 
+/* A=0, B=1, C=1 -> Especifidad 11 */
 .sopa li {
     border-radius: 1em;
     text-align: center;
@@ -21,26 +24,31 @@
     padding: 15% 0;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .encontrada {
     color: white;
     background-color: rgb(0, 39, 0);
 }
 
+/* A=0, B=1, C=1 -> Especifidad 11 */
 .words ul{
     list-style: none;
     float: left;
     margin: 5%;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h3 {
     text-align: center;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .tachada {
     text-decoration: line-through;
   }
 
-  main{
+/* A=0, B=0, C=1 -> Especifidad 1 */
+main{
       
     font-size: 1.7em;
-  }
+}

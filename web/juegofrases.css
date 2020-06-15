@@ -1,24 +1,29 @@
+/* A=0, B=0, C=1 -> Especifidad 1 */
 ul{
   list-style: none;
   margin: 5%;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h3,h4{
   text-align: center;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .draggable, .personaje{
     border: black 1px solid;
     text-align: center;
     line-height: 50px;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .pareja{
     border: rgb(0, 39, 0) 1px solid;
     color: rgb(0, 39, 0);
     text-decoration: line-through;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .grid-game-container {
   display: grid;
   grid-template-columns: repeat(2,1fr);

@@ -1,8 +1,10 @@
+/* A=0, B=0, C=1 -> Especifidad 1 */
 body{
     background-color: #171718;
     text-align: center;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 h2{
     color: lightgrey;
     font-size: 1.05em;

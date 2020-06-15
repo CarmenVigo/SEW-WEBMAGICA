@@ -1,8 +1,10 @@
+/* A=0, B=0, C=1 -> Especifidad 1 */
 div {
 	padding: 1em;
 	border-radius: 2em;
 }
 
+/* A=0, B=1, C=0 -> Especifidad 10 */
 .conversor {
 	display: flex;
 	flex-direction: row;
@@ -11,6 +13,7 @@ div {
 
 }
 
+/* A=0, B=1, C=1 -> Especifidad 11 */
 .conversor > div {
 	display: flex;
 	flex-direction: column;
@@ -21,24 +24,30 @@ div {
 	background-color: rgb(0, 39, 0);
 }
 
+
+/* A=0, B=1, C=1 -> Especifidad 11 */
 .conversor > p {
 	font-size: 3em;
 	margin: 0 auto;
 	padding: 0;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 input, select {
 	margin: 0.5em;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 a {	
     font-size: 1.5em;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 div{	
     line-height: 50px;
 }
 
+/* A=0, B=0, C=1 -> Especifidad 1 */
 main{
 	
     font-size: 1.5em;
