@@ -25,8 +25,8 @@ class Total {
             + sumas[1] + "</td><td>"
             + sumas[2] + "</td><td>"
             + sumas[3] + "</td></tr>");
-            $("gastos a").addClass('enlace_desactivado');
-        $("#gastos a").remove();
+        $("gastos a").addClass('enlace_desactivado');
+        //$("#gastos a").remove();
     }
 }
 
